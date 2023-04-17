@@ -7,32 +7,45 @@
     <meta name="keywords" content="anton, cv, resume, web,"> 
     <meta name="discription" content="Это сайт - резюме Антона" >
     <title>Anton Resume</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <Img src="image.jpg" width="200" alt="IMG">
+    <div class="container">
+    <div class="info">
+    <Img src="image.jpg" alt="IMG" class="avatar">
+        
+        <div class="info-text">
     <H1> Антон</H1>
     <p>Я учусь на веб-разработчика. <strong>Получу работу в течении 6 месяцев.</strong></p>
     <p> Я веду <em>здоровый образ жизни</em>. Правильно и вовремя питаюсь.<br> Занимаюсь бегом, йогой и силовыми физическими упражнениями.</p>
-    <H2><strong> Список социальных сетей:</strong>
-    </H2>
+       
+    <H3><strong> Список социальных сетей:</strong>
+    </H3>
     <p> <a  href="https://google.com" target="_blank"> Google </a> | <a  href="https://yandex.com" target="_blank"> Yandex </a> | <a  href="https://duckduckgo.com/" target="_blank"> DuckDuckGo </a> </p>
 
-    <h3> Мои хобби
-        <ul>
+        </div>
+    </div>
+
+    <div class="hobbi-card">
+        <h3 > Мои хобби
+        <ul class="hobbi">
             <li>Чайная культура</li>
             <li>Йога</li>
             <li>Путешествия</li>
             <li>История</li>
         </ul>
     </h3>
-    <h3> Опыт работы</h3>
-    <table>
+    </div>
+
+    <div class="experience-card">
+        <h3> Опыт работы</h3>
+    <table class="table" >
     <thead>
-    <tr>
+    <!-- <tr>
         <td>Название</td>
         <td>Должность</td>
         <td>Год</td>
-    </tr>
+    </tr> -->
 </thead>
 <tbody>
     <tr>
@@ -52,28 +65,36 @@
     </tr>
 </tbody>
 </table>
+</div>
 
-<h2>Связаться со мной</h2>
-<form action="/">
-    <div>
+<!-- <div class="mail-card" > -->
+
+<form action="/" class="mail-card">
+    <h3>Связаться со мной</h3>
+
+    <div class="form-row">
+
+    <div class="form-group">
         <label for="name">Ваше имя: </label>
         <input type="name" id="name"
         placeholder="Введите имя">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email: </label>
         <input type="email" id="email"
         placeholder="Введите email">
     </div>
 
-    <div>
+    </div>
+
+    <div class="form-group">
         <label for="messege">Ваше сообщение:</label>
-        <br>
         <textarea type="messege" cols="15" rows="5" placeholder="Введите сообщение"></textarea>
     </div>
-    <button type="submit" value="Отправить">Отправить форму</button>
+    <button class="btn" type="submit" value="Отправить">Отправить форму</button>
 </form>
-
+<!-- </div> -->
+</div>
 </body>
 </html>
